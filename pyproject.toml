@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+# [build-system]
+# requires = ["setuptools>=61.0"]
+# build-backend = "setuptools.build_meta"
+
+[project]
+name = "mediachecker"
+version = "2022.9.7"
+authors = [
+  { name="Alex Page", email="a.t.page@gmail.com" },
+]
+description = "Check A/V files for corruption using ffmpeg."
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/atpage/mediachecker"
+"Bug Tracker" = "https://github.com/atpage/mediachecker/issues"
