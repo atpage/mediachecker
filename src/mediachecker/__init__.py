@@ -39,6 +39,9 @@ class AVFile:
                 shell = True,
                 stderr = subprocess.STDOUT,
             )
+            # TODO: save output
+            # TODO?: any way to stop immediately when we get output,
+            # return False without checking the rest of the file?
         except subprocess.CalledProcessError:
             warn("Couldn't process %s" % self.filename)
             return None
