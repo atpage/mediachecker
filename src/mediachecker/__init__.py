@@ -1,12 +1,11 @@
-
 import os
 import subprocess
 import shlex
 from shutil import which
 from warnings import warn
 
-class AVFile:
 
+class AVFile:
     def __init__(self, filename=None):
         if type(filename) != str:
             raise TypeError('filename must be a string.')
@@ -26,17 +25,21 @@ class AVFile:
         if ffmpeg_path is None:
             raise RuntimeError("Couldn't find the ffmpeg binary.")
         if method == 'first_audio_track':
-            command = "ffmpeg -v error -i %s -map 0:a:0 -f null -" % (shlex.quote(self.filename))
+            command = "ffmpeg -v error -i %s -map 0:a:0 -f null -" % (
+                shlex.quote(self.filename)
+            )
         elif method == 'full':
             # TODO: does this actually check all streams?
             command = "ffmpeg -v error -i %s -f null -" % (shlex.quote(self.filename))
         else:
-            raise ValueError("'first_audio_track' is the only method currently supported.")
+            raise ValueError(
+                "'first_audio_track' is the only method currently supported."
+            )
         try:
             output = subprocess.check_output(
                 command,
-                shell = True,
-                stderr = subprocess.STDOUT,
+                shell=True,
+                stderr=subprocess.STDOUT,
             )
             # TODO?: stop immediately when we get output, return False
             # without checking the rest of the file?  (-xerror should
