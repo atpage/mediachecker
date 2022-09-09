@@ -8,7 +8,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "mediachecker"
-version = "2022.9.7"
+version = "2022.9.8"
 authors = [
   { name="Alex Page", email="a.t.page@gmail.com" },
 ]
