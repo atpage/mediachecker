@@ -5,12 +5,6 @@ import shlex
 from shutil import which
 from warnings import warn
 
-# import datetime as dt
-# import glob
-# import re
-# import fnmatch
-# import pathlib
-
 class AVFile:
 
     def __init__(self, filename=None):
@@ -26,7 +20,6 @@ class AVFile:
         ffmpeg_path = which('ffmpeg')
         if ffmpeg_path is None:
             raise RuntimeError("Couldn't find the ffmpeg binary.")
-
         if method == 'first_audio_track':
             command = "ffmpeg -v error -i %s -map 0:a:0 -f null -" % (shlex.quote(self.filename))
         elif method == 'full':
@@ -34,7 +27,6 @@ class AVFile:
             command = "ffmpeg -v error -i %s -f null -" % (shlex.quote(self.filename))
         else:
             raise ValueError("'first_audio_track' is the only method currently supported.")
-
         try:
             output = subprocess.check_output(
                 command,
