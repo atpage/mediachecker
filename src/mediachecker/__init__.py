@@ -33,7 +33,7 @@ class AVFile:
             command = "ffmpeg -v error -i %s -f null -" % (shlex.quote(self.filename))
         else:
             raise ValueError(
-                "'first_audio_track' is the only method currently supported."
+                "'first_audio_track' and 'full' are the only methods currently supported."
             )
         try:
             output = subprocess.check_output(
