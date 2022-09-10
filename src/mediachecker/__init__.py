@@ -41,6 +41,8 @@ class AVFile:
                 shell=True,
                 stderr=subprocess.STDOUT,
             )
+            # TODO?: save output to e.g. self.output in case we want
+            # to check it that way rather than a log.
             # TODO?: stop immediately when we get output, return False
             # without checking the rest of the file?  (-xerror should
             # work for this, but will be caught below.)
