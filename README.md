@@ -16,7 +16,7 @@ The `ffmpeg` command must also be available on your system (and `PATH`).
     f = AVFile('some_file_to_check.mp4')
     file_is_good = f.is_good()
 
-By default, we only scan the first audio track of the file.  This should be relatively fast.  Alternately, you can do:
+By default, we only scan the first audio track of the file.  This should be relatively fast.  Alternatively, you can do:
 
     file_is_good = f.is_good(method='full')
 
