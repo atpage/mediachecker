@@ -46,3 +46,5 @@ each file (using the default method), and write logs for all of them.
 * Add more tests
 
 * Enable HW acceleration, e.g. `ffmpeg -hwaccel cuda ...`
+
+* Enable debug statements regarding progress, etc.
