@@ -2,15 +2,13 @@
 
 import argparse
 import os
-
-# import glob
 import re
 import fnmatch
 
 from mediachecker import AVFile
 
 default_extensions = ['.avi', '.mkv', '.mp4', '.mpg', '.m4v']
-# TODO: ['divx', 'm2ts', 'ts', 'vob','webm', 'wmv']
+# TODO: ['.divx', '.m2ts', '.ts', '.vob', '.webm', '.wmv']
 
 
 def main():
