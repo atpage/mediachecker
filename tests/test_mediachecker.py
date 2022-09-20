@@ -32,7 +32,7 @@ class TestMediaChecker(unittest.TestCase):
     # TODO:
     # * test file with weird characters in the name
     # * test different media types, e.g. audio only, video only, ...
-
+    # * test CLI script
 
 if __name__ == '__main__':
     unittest.main()

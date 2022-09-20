@@ -8,7 +8,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "mediachecker"
-version = "2022.9.8"
+version = "2022.9.18"
 authors = [
   { name="Alex Page", email="a.t.page@gmail.com" },
 ]
@@ -25,3 +25,6 @@ classifiers = [
 [project.urls]
 "Homepage" = "https://github.com/atpage/mediachecker"
 "Bug Tracker" = "https://github.com/atpage/mediachecker/issues"
+
+[project.scripts]
+check_media = "mediachecker.cli:main"
