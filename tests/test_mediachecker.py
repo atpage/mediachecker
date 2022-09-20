@@ -34,5 +34,6 @@ class TestMediaChecker(unittest.TestCase):
     # * test different media types, e.g. audio only, video only, ...
     # * test CLI script
 
+
 if __name__ == '__main__':
     unittest.main()
