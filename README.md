@@ -44,3 +44,5 @@ each file (using the default method), and write logs for all of them.
 * Add more command line options
 
 * Add more tests
+
+* Enable HW acceleration, e.g. `ffmpeg -hwaccel cuda ...`
