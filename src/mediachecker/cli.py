@@ -7,8 +7,19 @@ import fnmatch
 
 from mediachecker import AVFile
 
-default_extensions = ['.avi', '.mkv', '.mp4', '.mpg', '.m4v']
-# TODO: ['.divx', '.m2ts', '.ts', '.vob', '.webm', '.wmv']
+default_extensions = [
+    '.avi',
+    '.mkv',
+    '.mp4',
+    '.mpg',
+    '.m4v',
+    '.divx',
+    '.m2ts',
+    '.ts',
+    '.vob',
+    '.webm',
+    '.wmv',
+]
 
 
 def main():
