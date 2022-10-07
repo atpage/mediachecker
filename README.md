@@ -48,3 +48,5 @@ each file (using the default method), and write logs for all of them.
 * Enable HW acceleration, e.g. `ffmpeg -hwaccel cuda ...`
 
 * Enable debug statements regarding progress, etc.
+
+* DRY.  See if/how [Tdarr](https://github.com/HaveAGitGat/Tdarr) does this.
